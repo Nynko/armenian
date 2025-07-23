@@ -12,17 +12,46 @@
             <div class="sm:basis-60 flex justify-center">
                 <div class="text-6xl sm:text-8xl tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary font-extrabold p-4 sm:p-6">Armenian Menu</div>
                 <div class="sm:fixed sm:bottom-0 sm:left-0 m-12 flex justify-center">
-                    <div class="rounded-lg p-12 w-80 p-4 shadow-xl flex flex-col" id="basket">
-                        <h2 class="text-xl font-bold">Selected Dishes</h2>
+                    <div class="rounded-2xl p-12 w-80 p-4 shadow-xl flex flex-col border-base-300 border-1" id="basket">
+                        <h2 class="h2">Selected Dishes</h2>
                         <div class="flex justify-center">
                             <ul class="list-disc p-2 grow"></ul>
                         </div>
-                        <div class="py-4">
-                            <label class="input input-bordered flex items-center gap-2">
-                                <input type="text" class="grow" id="owner" placeholder="Username" />
+                        <div class="py-0">
+                            <label class="input validator">
+                                <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <g
+                                    stroke-linejoin="round"
+                                    stroke-linecap="round"
+                                    stroke-width="2.5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    >
+                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                    </g>
+                                </svg>
+                                <input
+                                type="text"
+                                required
+                                id="owner"
+                                placeholder="Username"
+                                pattern="[A-Za-z][A-Za-z0-9\-]*"
+                                minlength="3"
+                                maxlength="30"
+                                title="Only letters, numbers or dash"
+                                />
                             </label>
+                            <p class="validator-hint">
+                            Must be 3 to 30 characters
+                            <br />containing only letters, numbers or dash
+                            </p>
                         </div>
-                        <button class="btn bg-gradient-to-r from-secondary to-primary text-white text-xl hover:shadow transition ease-in-out" id="order-button">Add to command</button>
+                        <button class="btn" id="order-button">Add to command
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -45,7 +74,7 @@
                 input.setAttribute("name", "my-accordion-2");
                 input.setAttribute("type", "radio");
                 const h2 = document.createElement("div");
-                h2.classList.add("collapse-title", "font-semibold");
+                h2.classList.add("collapse-title", "h2", "pl-4");
                 const categoryContent = document.createElement("div");
                 categoryContent.classList.add("collapse-content", "text-sm");
                 const table = document.createElement("table");
@@ -55,7 +84,7 @@
                         const id = item["name"].toLowerCase().replaceAll(" ", "_");
                         const row = table.insertRow(0);
                         row.id = id;
-                        row.classList.add("hover:bg-secondary-content", "hover:cursor-pointer", "transition", "ease-in-out");
+                        row.classList.add("hover:bg-secondary-content/10", "hover:cursor-pointer", "transition", "ease-in-out");
                         row.setAttribute("name", item["name"]);
                         const cell0 = row.insertCell(0);
                         const cell1 = row.insertCell(1);
@@ -106,7 +135,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
                                 `;
-                            plus.classList.add('cursor-pointer', 'hover:text-primary', 'transition', 'ease-in-out');
+                            plus.classList.add('cursor-pointer', 'text-primary', 'transition', 'ease-in-out');
                             plus.addEventListener('click', () => item_quantity.textContent = parseInt(item_quantity.textContent) + 1);
 
                             const minus = document.createElement('span');
@@ -115,7 +144,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
                                 `;
-                            minus.classList.add('cursor-pointer', 'hover:text-secondary', 'transition', 'ease-in-out');
+                            minus.classList.add('cursor-pointer', 'text-secondary', 'transition', 'ease-in-out');
                             minus.addEventListener('click', () => {
                                 if (parseInt(item_quantity.textContent) > 1) {
                                     item_quantity.textContent = parseInt(item_quantity.textContent) - 1;
@@ -144,10 +173,13 @@
                 }
 
                 order.addEventListener('click', () => {
+                    const span_ = document.createElement("span");
+                    span_.classList.add("bg-white", "loading", "loading-infinity", "loading-xl");
                     if (isOrderLoading) return; // Prevent double-clicking
                     isOrderLoading = true;
                     order.disabled = true;
-                    order.textContent = 'Processing...';
+                    order.textContent = 'Processing';
+                    order.appendChild(span_);
 
                     owner = document.getElementById('owner').value;
                     document.cookie = `lebanese-username=${owner}`;
