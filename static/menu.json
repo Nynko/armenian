@@ -1,0 +1,213 @@
+[
+  {
+    "category": "Mezzés",
+    "items": [
+      {
+        "name": "Mezzé 1 personne",
+        "description": "Composition",
+        "price": 10
+      },
+      {
+        "name": "Mezzé 2 personne",
+        "description": "Composition",
+        "price": 20
+      },
+      {
+        "name": "Hommos Small",
+        "description": "Purée de pois chiche à l’ail et au citron. 250g",
+        "price": 3.5
+      },
+      {
+        "name": "Hommos Large",
+        "description": "Purée de pois chiche à l’ail et au citron. 250g",
+        "price": 7
+      },
+      {
+        "name": "IKra Small",
+        "description": "Purée d’aubergines",
+        "price": 3.5
+      },
+      {
+        "name": "IKra Large",
+        "description": "Purée d’aubergines",
+        "price": 7
+      },
+      {
+        "name": "Dolma Small",
+        "description": "Feuille de vigne farcie au riz (6 Pièces)",
+        "price": 5
+      },
+      {
+        "name": "Dolma Large",
+        "description": "Feuille de vigne farcie au riz (12 Pièces)",
+        "price": 10
+      },
+      {
+        "name": "Beurek Small",
+        "description": "Feuilleté au fromage de brebis",
+        "price": 2.5
+      },
+      {
+        "name": "Beurek Large",
+        "description": "Feuilleté au fromage de brebis",
+        "price": 5
+      },
+      {
+        "name": "Jajekh Small",
+        "description": "Velouté de yaourt au concombre et aux herbes",
+        "price": 3.5
+      },
+      {
+        "name": "Jajekh Large",
+        "description": "Velouté de yaourt au concombre et aux herbes",
+        "price": 7
+      },
+      {
+        "name": "Bastema",
+        "description": "Tranche de bœuf séchée aux épices",
+        "price": 3.5
+      },
+      {
+        "name": "Soudjoukh",
+        "description": "Saucisson de bœuf aux épices",
+        "price": 3.5
+      },
+      {
+        "name": "Sous Beurek",
+        "description": "P’tite maison farcie au fromage Arménien",
+        "price": 6
+      }
+    ]
+  },
+  {
+    "category": "Salades",
+    "items": [
+      {
+        "name": "Taboulé Small",
+        "description": "Boulghour fin et légumes assaisonnés à l’huile, aux herbes et au citron",
+        "price": 4
+      },
+      {
+        "name": "Taboulé Large",
+        "description": "Boulghour fin et légumes assaisonnés à l’huile, aux herbes et au citron",
+        "price": 8
+      },
+      {
+        "name": "Salade Yerevan Small",
+        "description": "Légumes assaisonnés à l’huile d’olive",
+        "price": 4
+      },
+      {
+        "name": "Salade Yerevan Large",
+        "description": "Légumes assaisonnés à l’huile d’olive",
+        "price": 8
+      },
+      {
+        "name": "Salade César",
+        "description": "Salade verte, crouton de pain, légumes, havî khorovadz (brochette poulet braisé) et parmesan",
+        "price": 10.9
+      }
+    ]
+  },
+  {
+    "category": "Plats",
+    "items": [
+      {
+        "name": "Chiche Kebab",
+        "description": "Brochette de bœuf haché aux oignons et aux épices",
+        "price": 13.9
+      },
+      {
+        "name": "Havî Kebab",
+        "description": "Brochette de poulet haché aux oignons et aux épices",
+        "price": 12.9
+      },
+      {
+        "name": "Gari Khorovadz",
+        "description": "Brochette d’agneau",
+        "price": 14.9
+      },
+      {
+        "name": "Keufté",
+        "description": "Bœuf haché aux oignons et aux épices",
+        "price": 11.9
+      },
+      {
+        "name": "Pavé de Saumon",
+        "description": "Saumon",
+        "price": 13.9
+      },
+      {
+        "name": "Havî Khorovadz",
+        "description": "Brochette de poulet mariné en morceaux",
+        "price": 12.9
+      }
+    ]
+  },
+  {
+    "category": "Accompagnements supplémentaires",
+    "items": [
+      {
+        "name": "Frites",
+        "price": 2.5
+      },
+      {
+        "name": "Boulgour",
+        "price": 2.5
+      },
+      {
+        "name": "Assortiment de légumes",
+        "price": 2.5
+      },
+      {
+        "name": "Riz blanc",
+        "price": 2.5
+      }
+    ]
+  },
+  {
+    "category": "Desserts",
+    "items": [
+      {
+        "name": "Khorabia",
+        "description": "Sablé nature Arménien",
+        "price": 2.5
+      },
+      {
+        "name": "Baklava",
+        "description": "Gâteau aux noix et au sirop",
+        "price": 4.9
+      },
+      {
+        "name": "Dessert du Chef",
+        "description": "Demandez au chef le dessert du jour",
+        "price": 5.5
+      },
+      {
+        "name": "Glace",
+        "description": "3 boules au choix : chocolat, vanille, citron, caramel beurre salé, fraise, noix de coco, pistache, abricot, spéculoos",
+        "price": 4.5
+      },
+      {
+        "name": "Café ou Thé Gourmand",
+        "description": "Café ou thé, Sablé, Baklava, Dessert du chef",
+        "price": 8
+      },
+      {
+        "name": "Dame Blanche",
+        "description": "3 boules vanille, coulis de chocolat, chantilly",
+        "price": 6.9
+      },
+      {
+        "name": "Chantilly",
+        "description": "Supplément",
+        "price": 0.5
+      },
+      {
+        "name": "Coulis",
+        "description": "Supplément (Chocolat, Caramel, Fraise, Miel)",
+        "price": 1
+      }
+    ]
+  }
+]
