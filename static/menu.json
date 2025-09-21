@@ -1,5 +1,75 @@
 [
   {
+    "category": "Menu du jour",
+    "items": [
+      {
+        "id": "plat-seul",
+        "name": "Plat du jour seul",
+        "description": "Non déterminée - merci de remplir les plats du jours",
+        "price": 12.90,
+        "components": ["plat"]
+      },
+      {
+        "id": "entree-plat",
+        "name": "Entrée + Plat du jour",
+        "description": "Non déterminée - merci de remplir les plats du jours",
+        "price": 14.90,
+        "components": ["entree", "plat"]
+      },
+      {
+        "id": "plat-dessert",
+        "name": "Plat du jour + Dessert",
+        "description": "Non déterminée - merci de remplir les plats du jours",
+        "price": 14.90,
+        "components": ["plat", "dessert"]
+      },
+      {
+        "id": "entree-plat-dessert",
+        "name": "Entrée + Plat du jour + Dessert",
+        "description": "Non déterminée - merci de remplir les plats du jours",
+        "price": 16.90,
+        "components": ["entree", "plat", "dessert"]
+      }
+    ],
+    "subitems": [
+      {
+        "id": "entree-1",
+        "category": "entree",
+        "name": "Entrée 1 (Placeholder)",
+        "description": "Description de l'entrée 1",
+        "price": 0
+      },
+      {
+        "id": "entree-2",
+        "category": "entree",
+        "name": "Entrée 2 (Placeholder)",
+        "description": "Description de l'entrée 2",
+        "price": 0
+      },
+      {
+        "id": "plat-1",
+        "category": "plat",
+        "name": "Plat 1 + Accompagnement (Placeholder)",
+        "description": "Description du plat 1",
+        "price": 0
+      },
+      {
+        "id": "plat-2",
+        "category": "plat",
+        "name": "Plat 2 + Accompagnement (Placeholder)",
+        "description": "Description du plat 2",
+        "price": 0
+      },
+      {
+        "id": "dessert-1",
+        "category": "dessert",
+        "name": "Dessert 1 (Placeholder)",
+        "description": "Description du dessert 1",
+        "price": 0
+      }
+    ]
+  },
+  {
     "category": "Mezzés",
     "items": [
       {
