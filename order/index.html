@@ -82,7 +82,7 @@
                 category.items.map(
                     item => {
                         const id = item["name"].toLowerCase().replaceAll(" ", "_");
-                        const row = table.insertRow(0);
+                        const row = table.insertRow();
                         row.id = id;
                         row.classList.add("hover:bg-secondary-content/10", "hover:cursor-pointer", "transition", "ease-in-out");
                         row.setAttribute("name", item["name"]);
@@ -197,7 +197,7 @@
                 });
             })
             .catch(error => console.log(error));
-        
+
         async function addOrder(payload) {
             const url = "https://script.google.com/macros/s/AKfycbwGdnbubMZEjYP1rzE-ZxB7Jb5F1-fKuNgQ_brv8OEBeVwN6IO9vZA30SqxeHTxIfmqdg/exec"
             const apiUrl = `${url}?${payload}`;
